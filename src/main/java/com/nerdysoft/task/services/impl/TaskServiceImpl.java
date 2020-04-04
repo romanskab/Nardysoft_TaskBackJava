@@ -34,11 +34,6 @@ public class TaskServiceImpl implements TaskService {
         return taskDAO.findByDescription(description);
     }
 
-//    @Override
-//    public List<Task> findAllByUsersTasksContains(UsersTasks usersTasks) {
-//        return taskDAO.findAllByUsersTasksContains(usersTasks);
-//    }
-
     @Override
     public void delete(int id) {
         taskDAO.deleteById(id);
